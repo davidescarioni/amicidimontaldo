@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Amici di Montaldo</title>
+  <meta name="author" content="Davide Scarioni">
+  <meta name="description" content="La pagina web del circolo Amici di Montaldo">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <style>
+	* {
+		box-sizing: border-box;
+		content: "";
+		font-size: 16px;
+		font-family: sans-serif;
+		margin: 0;
+		padding: 0;
+		overflow-x:hidden;
+	}
+	h1 { 
+		font-size: 1.5em;
+		color: darkgreen;
+	}
+	h2 {
+		font-size: 1.2em;
+		padding: .5em 0;
+		color: darkgreen;
+	}
+	#link-wrapper {
+		display: flex;
+		flex-direction:column;
+	}
+	#link-wrapper a {
+		display: flex;
+		align-items: flex-end;
+	}
+	#link-wrapper img {
+		width: 23px;
+		margin-right: .2em;
+	}
+	a {
+		color: darkgreen;
+		margin-top: .5em;
+		transition: .5s color;
+		display: inline-block;
+	}
+	a#link-facebook {
+		color: darkblue;
+	}
+	#btn-submit {
+		background-color: darkgreen;
+		color: white;
+		padding: 0.3em;
+		border-radius: 6px;
+		border: 0;
+		margin-top: .5em;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#header-main {
+		background-image: url("./img/amici.jpg");
+		background-size: cover;
+		width: 100vw;
+		height: 450px;
+		background-repeat: no-repeat;
+		background-image: url("./img/amici.jpg");
+		background-position-y: -350px;
+	}
+	#header {
+		width: 100%;
+		padding: 20px;
+	}
+	article {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: left;
+		border-radius: 5px;
+		box-shadow: 1px 1px 1px #dddddd;
+		border: 1px solid #dddddd;
+		padding: 1% 2%;
+		margin: 2% auto 2% auto;
+		width: 50%;
+		background-color: white;
+	}
+	.event-description {
+		display: flex;
+		flex-direction: row;
+	}
+	.event-description img {
+		max-width: 25%;
+		align-self: center;
+		margin-right: .5em;
+	}
+	.event-description p {
+		width: 75%;
+		font-size: 1.3em;
+	}
+	@media screen and (max-width: 768px) {
+		article {
+			margin: 5%;
+			width: 90%;
+		}
+		.event-description {
+			flex-direction: column;
+			justify-content: center;
+		}
+		.event-description img {
+			max-width: 50%;
+			margin: .5em 0;
+		}
+		.event-description p {
+			font-size: 1em;
+		}
+	}
+	article header {
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	article:nth-last-child(1) {
+			margin-bottom: 2%;
+	}
+	footer {
+		background-color: darkgreen;
+		color:white;
+		width: 100%;
+		padding: 10px 20px;
+		text-align: center;
+	}
+	#tlemail {
+		padding: .5em;
+	}
+  </style>
+  </head>
+  <body onresize="resizeFunction()">
+	<header id="header">
+	<h1>Amici di Montaldo</h1>
+	</header>
+	<main>
+		<!-- <header id="header-main">
+		</header> -->
+		<img src="img/adm.jpg" style="width: 100%" />
+		<article>
+			<header>
+				Prossimo evento:
+			</header>
+			<main>
+				<h2>15° sagra del Fritto Misto alla Piemontese!</h2>
+				<div class="event-description">
+					<img src="img/fritto.jpg" />
+					<p>Dal 23 al 26 agosto 2019 e dal 30 agosto all'1 settembre 2019 ritorna, come ogni anno, la nostra sagra del Fritto alla Piemontese,
+					come sempre accompagnata da musica e ballo a palchetto. Apri la locandina o l'evento Facebook per conoscere tutti i dettagli!
+					</p>
+				</div>
+				<div id="link-wrapper">
+					<a href="img/locandina.jpg" id="link-locandina" title="Scarica la locandina"><img src="img/doc.jpg" /> Locandina</a>
+					<a href="https://www.facebook.com/events/360620141525750" id="link-facebook" title="Scarica la locandina"><img src="img/facebook-icon.png" /> Evento Facebook</a>
+				</div>
+<!--
+				<div class="box">
+					<time class="day" datetime="20019-08-23 19:00">
+						<span>
+						Venerdì
+						</span>
+						<span>
+						23
+						</span>
+						<span>
+						agosto '19
+						</span>
+					</time>
+					<span>ore<time class="day-time">19,00</time> Apertura Stand Gastronomico</span>
+					<span>ore<time class="day-time">21,30</time> Serata danzante con</span>
+					<div>
+					Mike e i Simpatici
+					</div>
+				</div>
+-->
+			</main>
+		</article>
+		<article>
+			<header>
+				Newsletter:
+			</header>
+			<form action="https://tinyletter.com/amicidimontaldo" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/amicidimontaldo', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+				<p>
+					<label for="tlemail" style="padding: .5em 0; display: inline-block;">Inserisci qui sotto la tua email per rimanere informato su tutti gli eventi organizzati nel nostro piccolo paese!</label>
+				</p>
+				<p>
+					<input type="text" style="width:100%" name="email" id="tlemail" />
+				</p>
+				<input type="hidden" value="1" name="embed"/>
+				<input id="btn-submit" type="submit" value="Iscriviti" />
+			</form>
+		</article>
+		<article>
+			<header style="padding-bottom:.5em;">
+				Dove siamo:
+			</header>
+			<div id="maps-wrapper" style="overflow:hidden;width: 320px;position: relative;"><iframe id="maps-iframe" width="320" height="440" src="https://maps.google.com/maps?width=600&amp;height=440&amp;hl=en&amp;q=Montaldo%20di%20Cerrina%20Monferrato%2C%20via%20Villa%206+(Montaldo%20di%20Cerrina%20Monferrato)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/de/">https://embedgooglemaps.com/de/</a> & <a href="http://linkmatch.info">ww://linkmatch.info</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+		</article>
+	</main>
+	<footer>
+		Amici di Montado - Via Villa 6, 15050 Montaldo di Cerrina Monferrato (AL) 
+	</footer>
+	<script>
+		function resizeFunction() {
+			var wdt = window.innerWidth;
+			if (wdt <= 768) {
+				var_wdt = "80vw"
+			} else {
+				var_wdt = "46vw"
+			}
+			var map = document.getElementById("maps-iframe");
+			var mapwrapper = document.getElementById("maps-wrapper");
+			map.style.width = var_wdt;
+			mapwrapper.style.width = var_wdt;
+		}
+		resizeFunction();
+	</script>
+  </body>
+</html>
