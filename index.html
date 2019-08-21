@@ -6,144 +6,15 @@
     <title>Amici di Montaldo</title>
   <meta name="author" content="Davide Scarioni">
   <meta name="description" content="La pagina web del circolo Amici di Montaldo">
-  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  <style>
-	* {
-		box-sizing: border-box;
-		content: "";
-		font-size: 16px;
-		font-family: sans-serif;
-		margin: 0;
-		padding: 0;
-		overflow-x:hidden;
-	}
-	h1 { 
-		font-size: 1.5em;
-		color: darkgreen;
-	}
-	h2 {
-		font-size: 1.2em;
-		padding: .5em 0;
-		color: darkgreen;
-	}
-	#link-wrapper {
-		display: flex;
-		flex-direction:column;
-	}
-	#link-wrapper a {
-		display: flex;
-		align-items: flex-end;
-	}
-	#link-wrapper img {
-		width: 23px;
-		margin-right: .2em;
-	}
-	a {
-		color: darkgreen;
-		margin-top: .5em;
-		transition: .5s color;
-		display: inline-block;
-	}
-	a#link-facebook {
-		color: darkblue;
-	}
-	#btn-submit {
-		background-color: darkgreen;
-		color: white;
-		padding: 0.3em;
-		border-radius: 6px;
-		border: 0;
-		margin-top: .5em;
-	}
-	body {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-between;
-	}
-	#header-main {
-		background-image: url("./img/amici.jpg");
-		background-size: cover;
-		width: 100vw;
-		height: 450px;
-		background-repeat: no-repeat;
-		background-image: url("./img/amici.jpg");
-		background-position-y: -350px;
-	}
-	#header {
-		width: 100%;
-		padding: 20px;
-	}
-	article {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: left;
-		border-radius: 5px;
-		box-shadow: 1px 1px 1px #dddddd;
-		border: 1px solid #dddddd;
-		padding: 1% 2%;
-		margin: 2% auto 2% auto;
-		width: 50%;
-		background-color: white;
-	}
-	.event-description {
-		display: flex;
-		flex-direction: row;
-	}
-	.event-description img {
-		max-width: 25%;
-		align-self: center;
-		margin-right: .5em;
-	}
-	.event-description p {
-		width: 75%;
-		font-size: 1.3em;
-	}
-	@media screen and (max-width: 768px) {
-		article {
-			margin: 5%;
-			width: 90%;
-		}
-		.event-description {
-			flex-direction: column;
-			justify-content: center;
-		}
-		.event-description img {
-			max-width: 50%;
-			margin: .5em 0;
-		}
-		.event-description p {
-			font-size: 1em;
-		}
-	}
-	article header {
-		font-size: 1.2em;
-		font-weight: bold;
-	}
-	article:nth-last-child(1) {
-			margin-bottom: 2%;
-	}
-	footer {
-		background-color: darkgreen;
-		color:white;
-		width: 100%;
-		padding: 10px 20px;
-		text-align: center;
-	}
-	#tlemail {
-		padding: .5em;
-	}
-  </style>
+  <meta name="theme-color" content="#006400" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
   </head>
   <body onresize="resizeFunction()">
 	<header id="header">
 	<h1>Amici di Montaldo</h1>
 	</header>
 	<main>
-		<!-- <header id="header-main">
-		</header> -->
 		<img src="img/adm.jpg" style="width: 100%" />
 		<article>
 			<header>
