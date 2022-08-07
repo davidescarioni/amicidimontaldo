@@ -284,6 +284,10 @@ table thead tr th {
   font-size: var(--fontSize-2);
 }
 
+.link__back {
+  text-decoration: none;
+}
+
 .bio {
   display: flex;
   margin-bottom: var(--spacing-16);

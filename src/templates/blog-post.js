@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -29,6 +29,7 @@ const BlogPostTemplate = ({
           itemProp="articleBody"
         />
         <hr />
+        <Link to="/" className="link__back">🠐 Torna alla pagina precedente</Link>
       </article>
     </Layout>
     </>

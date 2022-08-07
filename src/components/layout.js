@@ -11,7 +11,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
     </div>
         <footer>
-          Amici di Montado - Via Villa 6, 15020 Montaldo di Cerrina Monferrato (AL) 
+          Amici di Montaldo - Via Villa 6, 15020 Montaldo di Cerrina Monferrato (AL) 
         </footer></>
   )
 }
