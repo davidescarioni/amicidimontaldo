@@ -286,6 +286,19 @@ table thead tr th {
 
 .link__back {
   text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.link__back:hover {
+  text-decoration: underline;
+}
+
+.link__back svg {
+  width: 20px;
+  height: 20px;
 }
 
 .bio {
