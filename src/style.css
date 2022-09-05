@@ -240,6 +240,7 @@ table thead tr th {
   padding: var(--spacing-10) var(--spacing-5);
   margin-bottom: 0;
   padding-bottom: 0;
+  flex: 1;
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -345,6 +346,12 @@ table thead tr th {
   ol {
     list-style-position: inside;
   }
+}
+
+#gatsby-focus-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 #header {
