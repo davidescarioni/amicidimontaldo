@@ -37,4 +37,6 @@ Ed infine chiuderemo in bellezza **Domenica 3 settembre** con ancora **LISCIO 20
 
 Se volete mangiare bene e/o divertirvi facendo quattro salti sul ballo, MONTALDO è il posto giusto!
 
+[Evento Facebook](https://fb.me/e/32dqUT9fb)
+
 [Locandina](./locandina-2023.pdf)
