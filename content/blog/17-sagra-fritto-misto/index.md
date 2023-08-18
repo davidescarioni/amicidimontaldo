@@ -40,3 +40,5 @@ Se volete mangiare bene e/o divertirvi facendo quattro salti sul ballo, MONTALDO
 [Evento Facebook](https://fb.me/e/32dqUT9fb)
 
 [Locandina](./locandina-2023.pdf)
+
+Vuoi sbirciare in anteprima il nostro menu? [Menu](./montaldo-menu-2023.pdf)
